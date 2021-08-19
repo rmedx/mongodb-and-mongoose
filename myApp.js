@@ -22,8 +22,8 @@ const createAndSavePerson = (done) => {
       if (err) {
         done(err);
       }
+      done(null, Smith);
     });
-  done(null, data);
 };
 
 const createManyPeople = (arrayOfPeople, done) => {
