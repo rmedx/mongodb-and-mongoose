@@ -26,7 +26,7 @@ const createAndSavePerson = (done) => {
     });
 };
 
-const arrayOfPeople = [{name: "Amy", age: 19, favoriteFoods: ["Fries", "Coffee"]}, {name: "Tom", age: 20, favoriteFoods: ["Spinach", "Salad"]}, {name: "Jill", age: 21, favoriteFoods: ["Bacon", "Potato"]}];
+const arrayOfPeople = [{name: "Amy Amyson", age: 19, favoriteFoods: ["Fries", "Coffee"]}, {name: "Tom Tomson", age: 20, favoriteFoods: ["Spinach", "Salad"]}, {name: "Jill Jackson", age: 21, favoriteFoods: ["Bacon", "Potato"]}];
 
 const createManyPeople = (arrayOfPeople, done) => {
   Person.create(arrayOfPeople, (err, result) => {
