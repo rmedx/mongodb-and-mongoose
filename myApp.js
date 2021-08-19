@@ -17,13 +17,13 @@ const createAndSavePerson = (done) => {
     age: 18,
     favoriteFoods: ["Kale", "Blueberries"]
   });
-  Smith.save(err => 
+  Smith.save((err, data) => 
     {
       if (err) {
         done(err);
       }
     });
-  done(null);
+  done(null, data);
 };
 
 const createManyPeople = (arrayOfPeople, done) => {
