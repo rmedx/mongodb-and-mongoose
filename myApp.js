@@ -11,11 +11,11 @@ let personSchema = new Schema({
 
 let Person = mongoose.model("Person", personSchema);
 
-const Smith = new Person({
-  name: "Smith Smithson",
-  age: 18,
-  favoriteFoods: ["Kale", "Blueberries"]
-});
+// const Smith = new Person({
+//   name: "Smith Smithson",
+//   age: 18,
+//   favoriteFoods: ["Kale", "Blueberries"]
+// });
 
 const createAndSavePerson = (done) => {
   done(null /*, data*/);
